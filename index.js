@@ -112,7 +112,7 @@ function loadFunction(e) {
   if (
     localStorage.getItem("education") !== null &&
     localStorage.getItem("education").length > 0 &&
-    localStorage.getItem("education") != "Select"
+    localStorage.getItem("education") != "Degree"
   ) {
     result_education.innerHTML = localStorage.getItem("education");
   } else {
