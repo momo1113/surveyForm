@@ -78,7 +78,7 @@ function dataSave() {
       height_feet_result.value + " ft " + height_in_result.value
     );
   } else {
-    localStorage.setItem("height", "none");
+    localStorage.setItem("height", "None");
   }
 
   //store optional input address

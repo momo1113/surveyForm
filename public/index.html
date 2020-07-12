@@ -217,7 +217,14 @@
 
         <!-- reCaptcha -->
         <div class="form-group">
-          <button id="button" onclick="dataSave()">
+          <button
+            class="g-recaptcha"
+            data-sitekey="6Ldgq7AZAAAAACZFePzZegttpg2snPtnavVKYVQj"
+            data-callback="onSubmit"
+            data-action="submit"
+            id="button"
+            onclick="dataSave()"
+          >
             <a href="result.html"></a>
             Submit
           </button>
@@ -225,11 +232,11 @@
       </form>
     </div>
 
-    <!-- <script>
+    <script>
       function onSubmit(token) {
         document.getElementById("dataForm").submit();
       }
-    </script> -->
+    </script>
 
     <!-- script -->
     <script src="index.js"></script>
