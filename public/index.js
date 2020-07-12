@@ -97,7 +97,7 @@ function dataSave() {
       `${address.value}, ${city.value},${state.value}, ${zip.value}`
     );
   } else {
-    localStorage.setItem("address", "none");
+    localStorage.setItem("address", "None");
   }
 }
 
