@@ -20,7 +20,7 @@ public class Main {
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(40,TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
-        driver.get("file:///Users/momosun/Desktop/CSC642/surveyForm/index.html");
+        driver.get("https://form-9e65f.web.app/");
         System.out.println("Application title is ============="+driver.getTitle());
 
         driver.findElement(By.xpath("//input[@id = 'name']")).sendKeys("Momo");
