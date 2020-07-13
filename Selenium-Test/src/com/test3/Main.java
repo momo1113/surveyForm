@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty("webdriver.gecko.driver","/Users/momosun/Desktop/CSC642/Test/drivers/chromedriver");
+        System.setProperty("webdriver.gecko.driver","/Users/momosun/Desktop/CSC642/Selenium-Test/drivers/chromedriver");
 
         // if above property is not working or not opening the application in browser then try below property
 
