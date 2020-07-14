@@ -234,7 +234,10 @@
 
     <script>
       function onSubmit(token) {
-        document.getElementById("dataForm").submit();
+        if (document.getElementById("dataForm").reportValidity()) {
+          document.getElementById("dataForm").submit();
+        }
+        //document.getElementById("dataForm").reportValidity();
       }
     </script>
 
