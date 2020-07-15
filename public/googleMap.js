@@ -1,13 +1,13 @@
 function initAutocomplete() {
-  const apiKey = "AIzaSyCRGdlTqk5HOT3O4OHXb1FBUycEuyRM9Ho";
-
+  // put your own google map API key
+  const mapApi = "   ";
   if (localStorage.getItem("address") !== null) {
     let address = localStorage.getItem("address").split(",");
     let stree = address[0];
     let city = address[1];
     let state = address[2];
     let zip = address[3];
-    const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${stree},+${city},+${state}&key=${apiKey}`;
+    const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${stree},+${city},+${state}&key=${mapApi}`;
 
     //fetch api
     fetch(url)
